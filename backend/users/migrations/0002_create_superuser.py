@@ -10,7 +10,7 @@ def create_admin(apps, schema_editor):
     
     if not User.objects.filter(email=email).exists():
         print(f"DTOOL: Creating superuser {email}")
-        User.objects.create_superuser(email=email, password=password, role='admin')
+        User.objects.create_superuser(username="admin", email=email, password=password, role='admin')
     else:
         print("DTOOL: Superuser already exists")
 
