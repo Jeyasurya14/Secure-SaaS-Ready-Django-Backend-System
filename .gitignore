@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Environment Variables (Secrets)
+.env
+.env.prod
+.env.local
+
+# Database
+db.sqlite3
+db.sqlite3-journal
+
+# Django
+/media/
+/staticfiles/
+backend/staticfiles/
+backend/media/
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
